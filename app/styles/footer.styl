@@ -1,0 +1,60 @@
+@import './vars/medias.styl'
+@import './vars/units.styl'
+@import './vars/colors.styl'
+
+copy-height = 60px
+
+.footer
+	background-color #000
+	font-size 0
+	width 100%
+	overflow hidden
+	position relative
+
+	&__content
+		position absolute
+		top 0
+		bottom copy-height
+		right 0
+		left 0
+		width max-width
+		max-width 100%
+		margin auto
+		display flex
+		align-items center
+		justify-content center
+		flex-direction column
+
+	&__title
+		font-size 3rem
+		font-weight 300
+		text-transform uppercase
+		color main
+		
+		@media (min-width tablet)
+			font-size 5.14rem
+
+	&__copy
+		height copy-height
+		line-height 60%
+		background-color main
+		text-align center
+		
+	&__text
+		color text-gray-light
+		font-weight 300
+		font-size 1rem
+		line-height copy-height
+
+	&__image
+		width 140%
+		position relative
+		left -20%
+		right -20%
+		margin auto
+		opacity .6
+		
+		@media (min-width tablet)
+			width 100%
+			left 0
+			right 0

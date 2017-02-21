@@ -1,0 +1,61 @@
+@import './vars/colors.styl'
+@import './vars/units.styl'
+@import './vars/medias.styl'
+@import './ui/button.styl'
+
+.filter
+	max-width max-width
+	width 100%
+	padding gutter-h
+	margin auto
+	box-sizing border-box
+
+	&__content
+		font-size 0
+		position relative
+		border-bottom 1px solid dark-white
+		padding-bottom (gutter-v / 2)
+		
+	&__title, &__checkbox
+		display block
+		vertical-align top
+		line-height 1.3rem
+		margin-right (gutter-h / 2)
+		
+		@media (min-width desk-low)
+			display inline-block
+
+	&__title
+		font-weight 500
+		font-size 1.3rem
+		margin-bottom (gutter-v / 2)
+		
+		@media (min-width desk-low)
+			margin-bottom 0
+		
+	&__checkbox
+		font-size 1.15rem
+		
+		input:checked + label
+			color text-gray
+
+		label, input
+			outline 0
+			color text-gray-light
+			vertical-align middle
+			cursor pointer
+			transition color .3s ease-in-out
+		
+		label
+			padding 0 (gutter-h / 4)
+			
+	&__more
+		margin-top (gutter-v / 2)
+		@extend .button
+		
+		@media (min-width tablet)
+			position absolute
+			right gutter-h
+			top 0
+			bottom (gutter-h / 2)
+			margin auto

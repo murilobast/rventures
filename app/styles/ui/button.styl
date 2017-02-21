@@ -1,0 +1,28 @@
+@import './vars/colors.styl'
+@import './vars/units.styl'
+
+.button
+	background-color text-gray-dark
+	height 48px
+	line-height 48px
+	display block
+	text-align center
+	text-transform uppercase
+	color light-white
+	font-weight 300
+	font-size .95rem
+	border-radius 3px
+	padding 0 (gutter-h / 2)
+	transition all .3s ease-in-out
+	border 0
+	cursor pointer
+	
+	&:hover
+		background-color text
+	
+	&--inverted
+		background-color inverted
+		
+		&:hover
+			background-color dark-inverted
+	

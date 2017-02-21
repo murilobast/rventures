@@ -1,0 +1,91 @@
+@import './vars/colors.styl'
+@import './vars/medias.styl'
+@import './vars/units.styl'
+
+.catalog
+	margin 0 auto
+	padding gutter-h 0
+
+	&__content
+		max-width max-width
+		width 100%
+		margin auto
+		box-sizing border-box
+		padding 0 (gutter-h / 2) (gutter-h * 2)
+		font-size 1rem
+		
+	&__title
+		font-weight 500
+		color text
+		font-size 1.2rem
+		padding 0 (gutter-h / 2)
+
+	&__item
+		margin (gutter-h / 2) (gutter-h / 2)
+		padding 0 gutter-h gutter-h
+		box-sizing border-box
+		font-size 0
+		cursor pointer
+		transition border .3s ease-in-out
+		border 1px solid dark-white
+
+		@media (min-width tablet)
+			border 1px solid transparent
+			
+			&:hover
+				border 1px solid dark-white
+				
+				.button
+					opacity 1
+
+	&__image
+		width 100%
+
+	&__personalize
+		height 16px
+		text-transform uppercase
+		padding 4px 0
+		border-bottom 1px solid dark-white
+
+		span
+			font-size 0.85rem
+			line-height 16px
+			vertical-align middle
+			padding 0 8px
+			cursor pointer
+			color text-gray
+			font-weight 500
+			
+		img
+			vertical-align top
+
+	&__info
+		padding 12px 0
+		
+		p
+			padding 4px
+
+	&__name, &__high-top, &__installments
+		font-size 1rem
+
+	&__name
+		color text
+		font-weight 500
+
+	&__high-top
+		color text-gray-light
+		font-weight 300
+
+	&__price
+		font-size 1.15rem
+		font-weight 500
+		color text-gray
+
+	&__installments
+		color text-gray
+
+	&__buy
+		width 100%
+		
+		@media (min-width tablet)
+			opacity 0

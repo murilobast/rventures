@@ -1,0 +1,29 @@
+@import './vars/colors.styl'
+
+.dots
+	position relative
+	top 30px
+
+	&__dot
+		display inline-block
+		vertical-align top
+
+	&__button
+		border 0
+		padding 0
+		width 20px
+		height 20px
+		text-align center
+		line-height 20px
+		cursor pointer
+		background-color transparent
+
+		&--active span
+			background-color #a5a5a5
+			
+	&__inner
+		display inline-block
+		width 9px
+		height 9px
+		border-radius 50%
+		background-color #d1d1d1
