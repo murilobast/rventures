@@ -28,6 +28,17 @@ sudo npm i -g stylus
     npm start prod | npm run start prod
 ``` 
 
+### Building
+
+Development
+```sh
+    webpack
+```
+Production
+```sh
+    npm run build | webpack --config webpack.config.prod.js
+```
+
 ### Why React + Redux?
 
 Even though it's a relativelly easy interface to build, React makes it easier to develop fast and reliable applications over pure html/css/js, and with Redux all the application state is stored in only onde place which can be managed with easy using reducers and action builders.

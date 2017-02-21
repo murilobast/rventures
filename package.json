@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "webpack --config webpack.config.prod.js"
   },
   "author": "Murilo Bastos (iam@murilobastos.com)",
   "license": "ISC",
@@ -17,9 +18,7 @@
     "react": "^15.0.2",
     "react-addons-css-transition-group": "^15.4.2",
     "react-dom": "^15.0.2",
-    "react-dynamic-modal": "^1.1.1",
     "react-hot-loader": "^3.0.0-beta.2",
-    "react-lazyload": "^2.2.0",
     "react-redux": "^4.4.5",
     "react-router": "^2.4.0",
     "react-router-redux": "^4.0.4",
